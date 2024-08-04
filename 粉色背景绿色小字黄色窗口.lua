@@ -651,7 +651,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "XK脚本中心",
+			Name = "北极星脚本中心",
 			Content = "再见“朋友”有机会回来看啊",
 			Time = 5
 		})
