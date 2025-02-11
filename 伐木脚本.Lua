@@ -100,25 +100,25 @@ local bai = {
 }
 spawn(function()
     while task.wait() do
-        game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text = "北极星付费脚本"
+        game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text = "北极星脚本yyds"
         game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.TextColor3 =
             Color3.fromRGB(255, 0, 0)
         wait(1)
         game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text =
-            "北极星脚本牛逼,肥柑脚本垃圾"
+            "北极星脚本牛逼,遥遥领先"
         game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.TextColor3 =
             Color3.fromRGB(255, 0, 0)
         wait(1)
         game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text =
-            "北极星脚本VS肥柑"
+            "北极星脚本持续更新"
         game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.TextColor3 =
             Color3.fromRGB(255, 0, 0)
         wait(1)
-        game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text = "北极星脚本赢了"
+        game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text = "一起加油吧"
         game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.TextColor3 =
             Color3.fromRGB(255, 0, 0)
         wait(1)
-        game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text = "肥柑惨败"
+        game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text = "中国加油"
         game:GetService("Workspace").Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.TextColor3 =
             Color3.fromRGB(255, 0, 0)
         wait(1)
