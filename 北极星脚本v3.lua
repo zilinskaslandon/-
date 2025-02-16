@@ -112,10 +112,4 @@ local Dropdown = MainTab:Dropdown({ --下拉菜单
     end
 })
 
-WindUI:Notify({
-            Title = "北极星脚本",
-            Content = "耗时:0.999秒"...`Loaded in {math.floor((tick() - StartLoadTime) * 10) / 10}s`..." 祝你使用愉快", 
-            Duration = 6,
-        }), 
-
 
