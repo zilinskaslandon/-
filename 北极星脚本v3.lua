@@ -1,5 +1,5 @@
-local msg = Instance.new("Message",workspace)--在屏幕中心的字
-msg.Text = "欢迎使用北极星中心(已回归)"
+local msg = Instance.new("北极星脚本中心",workspace)
+msg.Text = "欢迎使用北极星中心"
 wait(2) --时间
 msg:Destroy()
 local StartLoadTime = tick()  --计时的脚本
@@ -112,10 +112,10 @@ local Dropdown = MainTab:Dropdown({ --下拉菜单
     end
 })
 
-
---通知
-WindUI:Notify({ --真通知(是和脚本一起连的)
-            Title = "加载完成 ✅",
-            Content = "耗时:",`Loaded in {math.floor((tick() - StartLoadTime) * 10) / 10}s`,"比0.1%的用户快了9999秒"
+WindUI:Notify({
+            Title = "北极星脚本",
+            Content = "耗时:0.999秒"...`Loaded in {math.floor((tick() - StartLoadTime) * 10) / 10}s`..." 祝你使用愉快", 
             Duration = 6,
-        })
+        }), 
+
+
