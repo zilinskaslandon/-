@@ -216,7 +216,7 @@ end
       DropShadow.BackgroundTransparency = 1.000
       DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
       DropShadow.Size = UDim2.new(1, 10, 1, 10)
-      DropShadow.Image = "rbxassetid://101364546714400" --背景
+      DropShadow.Image = "rbxassetid://18941614817" --背景
       DropShadow.ImageColor3 = Color3.fromRGB(255,255,255)
       DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
@@ -455,7 +455,7 @@ Open.Draggable = true
 Open.Image = "rbxassetid://18942673533"
 Open.MouseButton1Click:Connect(function()
   Main.Visible = not Main.Visible
-  Open.Image = Main.Visible and "rbxassetid://18942670945" or "rbxassetid://101364546714400" --开关的图
+  Open.Image = Main.Visible and "rbxassetid://101364546714400" or "rbxassetid://87323605454027" --开关的图
 end)
 
 UICorner_2.CornerRadius = UDim.new(0, 90)
