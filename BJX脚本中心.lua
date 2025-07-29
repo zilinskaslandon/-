@@ -101,12 +101,12 @@ MainTab:AddToggle({
 })
 
 MainTab:AddToggle({
-    Name = "人物穿墙",
-    Default = false,
-    Callback = function(Value)
-        if Value then
-            Noclip = true
-            Stepped = game:GetService("RunService").Stepped:Connect(function()
+    Title = '人物穿墙',
+    Callback = function(state)
+        if state then
+            -- 穿墙开启
+            local Noclip = true
+            local Stepped = game:GetService("RunService").Stepped:Connect(function()
                 if Noclip then
                     local character = game.Players.LocalPlayer.Character
                     if character then
@@ -121,10 +121,11 @@ MainTab:AddToggle({
                 end
             end)
         else
+            -- 穿墙关闭
             Noclip = false
             if Stepped then
                 Stepped:Disconnect()
             end
         end
     end
-}
+})
