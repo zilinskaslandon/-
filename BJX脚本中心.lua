@@ -105,39 +105,25 @@ MainTab:AddToggle({
     Default = false,
     Callback = function(Value)
         if Value then
-            -- 开启穿墙
-            _G.Noclip = true
-            _G.Stepped = game:GetService("RunService").Stepped:Connect(function()
-                if _G.Noclip then
+            Noclip = true
+            Stepped = game:GetService("RunService").Stepped:Connect(function()
+                if Noclip then
                     local character = game.Players.LocalPlayer.Character
                     if character then
-                        for _, part in pairs(character:GetDescendants()) do
+                        for _, part in ipairs(character:GetDescendants()) do
                             if part:IsA("BasePart") then
                                 part.CanCollide = false
                             end
                         end
                     end
                 else
-                    _G.Stepped:Disconnect()
+                    Stepped:Disconnect()
                 end
             end)
         else
-            -- 关闭穿墙
-            _G.Noclip = false
-            
-            -- 恢复碰撞
-            local character = game.Players.LocalPlayer.Character
-            if character then
-                for _, part in pairs(character:GetDescendants()) do
-                    if part:IsA("BasePart") then
-                        part.CanCollide = true
-                    end
-                end
-            end
-            
-            -- 断开连接
-            if _G.Stepped then
-                _G.Stepped:Disconnect()
+            Noclip = false
+            if Stepped then
+                Stepped:Disconnect()
             end
         end
     end
