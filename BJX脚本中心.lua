@@ -430,7 +430,7 @@ MainTab:AddButton({
     end
 })
 
-local MainTab = Window:MakeTab({"伐木大亨", "cool"})
+local MainTab = Window:MakeTab({"伐木2", "cool"})
 
 MainTab:AddButton({
     Title = "北极星/伐木",
