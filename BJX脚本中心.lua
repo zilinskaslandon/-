@@ -203,42 +203,6 @@ MainTab:AddButton({
 
 local MainTab = Window:MakeTab({"忍者传奇", "cool"})
 
-Tab:AddToggle({
-    Title = '自动挥舞',
-    Callbock = function(state)
-        if state then
-            autoswing = true
-            swinging()
-        else
-            autoswing = false
-        end
-    end
-})
-
-Tab:AddToggle({
-    Title = '自动售卖',
-    Callbock = function(state)
-        if state then
-            autosell = true
-            selling()
-        else
-            autosell = false
-        end
-    end
-})
-
-Tab:AddToggle({
-    Title = '存满了自动售卖',
-    Callbock = function(state)
-        if state then
-            autosellmax = true
-            maxsell()
-        else
-            autosellmax = false
-        end
-    end
-})
-
 MainTab:AddButton({
     Title = '出生',  -- 使用 Title 作为显示名称
     Callback = function()
@@ -386,6 +350,7 @@ MainTab:AddButton({
     end
 })
 
+
 local MainTab = Window:MakeTab({"最坚强战场", "cool"})
 
 MainTab:AddButton({
@@ -423,11 +388,3 @@ MainTab:AddButton({
     end
 })
 
-local MainTab = Window:MakeTab({"伐木2", "cool"})
-
-MainTab:AddButton({
-    Title = "北极星伐木2",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%E4%BC%90%E6%9C%A8%E8%84%9A%E6%9C%AC.Lua"))()
-    end
-})
