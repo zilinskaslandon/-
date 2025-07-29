@@ -102,29 +102,33 @@ MainTab:AddToggle({
 
 MainTab:AddToggle({
     Title = '人物穿墙',
-    Callback = function(state)
-        if state then
-            -- 穿墙开启
-            local Noclip = true
-            local Stepped = game:GetService("RunService").Stepped:Connect(function()
-                if Noclip then
-                    local character = game.Players.LocalPlayer.Character
-                    if character then
-                        for _, part in ipairs(character:GetDescendants()) do
-                            if part:IsA("BasePart") then
-                                part.CanCollide = false
-                            end
+    Default = false,
+    Callback = function(Value)
+        if Value then
+            -- 开启逻辑
+            Noclip = true
+            Stepped = game:GetService('RunService').Stepped:Connect(function()
+                if Noclip and game.Players.LocalPlayer.Character then
+                    for _, part in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                        if part:IsA("BasePart") then
+                            part.CanCollide = false
                         end
                     end
-                else
-                    Stepped:Disconnect()
                 end
             end)
         else
-            -- 穿墙关闭
+            -- 关闭逻辑（三重保障）
             Noclip = false
+            if game.Players.LocalPlayer.Character then
+                for _, part in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                    if part:IsA("BasePart") then
+                        part.CanCollide = true
+                    end
+                end
+            end
             if Stepped then
                 Stepped:Disconnect()
+                Stepped = nil
             end
         end
     end
