@@ -1,14 +1,3 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
-Library.DefaultColor = Color3.fromRGB(255,0,0)
-      local sound = Instance.new("Sound") 
-     sound.SoundId = "rbxassetid://1237557124" 
-     sound.Parent = game.Workspace 
-     sound:Play()
-  
-Library:Notification({
-	Text = "作者：北极星",
-	Duration = 6
-})
 
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/QQ-9-2-8-9-50173/refs/heads/main/Ul%E6%BA%90%E7%A0%81.lua"))()
 
