@@ -203,13 +203,6 @@ MainTab:AddButton({
 
 local MainTab = Window:MakeTab({"忍者传奇", "cool"})
 
-MainTab:AddButton({
-    Title = "北极星忍者传奇",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%F0%9F%87%A9%F0%9F%87%AA%E5%BF%8D%E8%80%85%E4%BC%A0%E5%A5%87%E8%84%9A%E6%9C%AC%F0%9F%87%A9%F0%9F%87%AA.Lua"))()
-    end
-})
-
 Tab:AddToggle({
     Title = '自动挥舞',
     Callbock = function(state)
@@ -433,7 +426,7 @@ MainTab:AddButton({
 local MainTab = Window:MakeTab({"伐木2", "cool"})
 
 MainTab:AddButton({
-    Title = "北极星/伐木",
+    Title = "北极星伐木2",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%E4%BC%90%E6%9C%A8%E8%84%9A%E6%9C%AC.Lua"))()
     end
