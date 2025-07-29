@@ -10,10 +10,6 @@ Library:Notification({
 	Duration = 6
 })
 
-local Window = library:CreateWindow("BJX团队", "BJX", 10044538000)
-
-
-
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/QQ-9-2-8-9-50173/refs/heads/main/Ul%E6%BA%90%E7%A0%81.lua"))()
 
 local Window = redzlib:MakeWindow({
