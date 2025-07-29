@@ -1,3 +1,19 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(255,0,0)
+      local sound = Instance.new("Sound") 
+     sound.SoundId = "rbxassetid://1237557124" 
+     sound.Parent = game.Workspace 
+     sound:Play()
+  
+Library:Notification({
+	Text = "作者：北极星",
+	Duration = 6
+})
+
+local Window = library:CreateWindow("BJX团队", "BJX", 10044538000)
+
+
+
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/QQ-9-2-8-9-50173/refs/heads/main/Ul%E6%BA%90%E7%A0%81.lua"))()
 
 local Window = redzlib:MakeWindow({
@@ -26,6 +42,13 @@ MainTab:AddButton({
     Title = "飞行",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%E5%8C%97%E6%9E%81%E6%98%9F%E9%A3%9E%E8%A1%8C.Lua"))()
+    end
+})
+
+MainTab:AddButton({
+    Title = "通用ESP",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP"))()
     end
 })
 
@@ -195,6 +218,48 @@ MainTab:AddButton({
 
 local MainTab = Window:MakeTab({"忍者传奇", "cool"})
 
+MainTab:AddButton({
+    Title = "北极星忍者传奇",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%F0%9F%87%A9%F0%9F%87%AA%E5%BF%8D%E8%80%85%E4%BC%A0%E5%A5%87%E8%84%9A%E6%9C%AC%F0%9F%87%A9%F0%9F%87%AA.Lua"))()
+    end
+})
+
+Tab:AddToggle({
+    Title = '自动挥舞',
+    Callbock = function(state)
+        if state then
+            autoswing = true
+            swinging()
+        else
+            autoswing = false
+        end
+    end
+})
+
+Tab:AddToggle({
+    Title = '自动售卖',
+    Callbock = function(state)
+        if state then
+            autosell = true
+            selling()
+        else
+            autosell = false
+        end
+    end
+})
+
+Tab:AddToggle({
+    Title = '存满了自动售卖',
+    Callbock = function(state)
+        if state then
+            autosellmax = true
+            maxsell()
+        else
+            autosellmax = false
+        end
+    end
+})
 
 MainTab:AddButton({
     Title = '出生',  -- 使用 Title 作为显示名称
@@ -340,5 +405,51 @@ MainTab:AddButton({
     Title = "旋涡岛",
     Callback = function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.082, 91246.070, 69.567)
+    end
+})
+
+local MainTab = Window:MakeTab({"最坚强战场", "cool"})
+
+MainTab:AddButton({
+    Title = "SkibidCen",
+    Callbock = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code"))()
+    end
+})
+
+MainTab:AddButton({
+    Title = "Loader",
+    Callbock = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VortexScripts/Project-Vortex-V9/main/Loader"))()
+    end
+})
+
+MainTab:AddButton({
+    Title = "TSBANIMS",
+    Callbock = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mautiku/TSB-anim/main/TSBANIMS'), true))()
+    end
+})
+
+MainTab:AddButton({
+    Title = "Battlegrounuds77",
+    Callbock = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Strongest/main/Battlegrounds77"))()
+    end
+})
+
+MainTab:AddButton({
+    Title = "复制卡密上面卡密",
+    Callbock = function()
+        setclipboard("BestTheStrongest5412Roblox")
+    end
+})
+
+local MainTab = Window:MakeTab({"伐木大亨", "cool"})
+
+MainTab:AddButton({
+    Title = "北极星/伐木",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%E4%BC%90%E6%9C%A8%E8%84%9A%E6%9C%AC.Lua"))()
     end
 })
