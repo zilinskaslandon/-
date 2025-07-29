@@ -89,12 +89,13 @@ MainTab:AddButton({
     end
 })
 
-MainTab:AddButton({
-    Title = "夜视",
-    Callback = function()
-        loadstring(game:HttpGet("        if state then
-        game.Lighting.Ambient = Color3.new(1, 1, 1)
+MainTab:AddToggle({
+    Title = "夜视模式",  -- 添加一个标题
+    Callback = function(state)
+        if state then
+            game.Lighting.Ambient = Color3.new(1, 1, 1)  -- 开启夜视，设置环境光为白色
         else
-            game.Lighting.Ambient = Color3.new(0, 0, 0)"))()
+            game.Lighting.Ambient = Color3.new(0, 0, 0)   -- 关闭夜视，恢复为黑色
+        end
     end
 })
