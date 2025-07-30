@@ -1,4 +1,3 @@
-
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/gycgchgyfytdttr/QQ-9-2-8-9-50173/refs/heads/main/Ul%E6%BA%90%E7%A0%81.lua"))()
 
 local Window = redzlib:MakeWindow({
@@ -201,190 +200,15 @@ MainTab:AddButton({
     end
 })
 
-local MainTab = Window:MakeTab({"忍者传奇", "cool"})
+local MainTab = Window:MakeTab({"伐木大亨二", "cool"})
 
 MainTab:AddButton({
-    Title = '出生',  -- 使用 Title 作为显示名称
+    Title = "北极星伐木脚本",
     Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.665, 2.423, 29.920)
-    end
-})
-
-MainTab:AddButton({
-    Title = '魔法',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(51.172, 766.181, -138.449)
-    end
-})
-
-MainTab:AddButton({
-    Title = '置岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(207.299, 2013.880, 237.367)
-    end
-})
-
-MainTab:AddButton({
-    Title = '密岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(171.972, 4091.381, 42.070)
-    end
-})
-
-MainTab:AddButton({
-    Title = '天空岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(148.838, 5657.185, 73.591)
-    end
-})
-
-MainTab:AddButton({
-    Title = '冷岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(139.283, 9285.184, 71.364)
-    end
-})
-
-MainTab:AddButton({
-    Title = '无限岛',  
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(149.348, 13680.031, 73.386)
-    end
-})
-
-MainTab:AddButton({
-    Title = '沙岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(133.372, 17686.328, 72.004)
-    end
-})
-
-MainTab:AddButton({
-    Title = '雷岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(143.193, 24970.021, 78.059)
-    end
-})
-
-MainTab:AddButton({
-    Title = '达古塔教岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(141.272, 28256.295, 69.379)
-    end
-})
-
-MainTab:AddButton({
-    Title = '暗影岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(132.743, 33206.989, 57.496)
-    end
-})
-
-MainTab:AddButton({
-    Title = '灵魂岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(137.761, 29917.571, 61.066)
-    end
-})
-
-MainTab:AddButton({
-    Title = '黄金岛', 
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(128.322, 52607.766, 56.694)
-    end
-})
-
-MainTab:AddButton({
-    Title = '传奇岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(146.352, 59594.680, 71.532)
-    end
-})
-
-MainTab:AddButton({
-    Title = '科技传奇岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(131.232, 66669.164, 72.217)
-    end
-})
-
-MainTab:AddButton({
-    Title = '超能岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.987, 70211.156, 57.023)
-    end
-})
-
-MainTab:AddButton({
-    Title = '混沌传奇岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(148.584, 74492.852, 69.317)
-    end
-})
-
-MainTab:AddButton({
-    Title = '黑暗岛',
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(136.970, 79746.984, 58.541)
-    end
-})
-
-MainTab:AddButton({
-    Title = "黑暗元素岛",
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(141.697, 83198.984, 72.731)
-    end
-})
-
-MainTab:AddButton({
-    Title = "和平岛",
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.316, 87051.063, 66.784)
-    end
-})
-
-MainTab:AddButton({
-    Title = "旋涡岛",
-    Callback = function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.082, 91246.070, 69.567)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%E4%BC%90%E6%9C%A8%E8%84%9A%E6%9C%AC.Lua"))()
     end
 })
 
 
-local MainTab = Window:MakeTab({"最坚强战场", "cool"})
 
-MainTab:AddButton({
-    Title = "SkibidCen",
-    Callbock = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code"))()
-    end
-})
-
-MainTab:AddButton({
-    Title = "Loader",
-    Callbock = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/VortexScripts/Project-Vortex-V9/main/Loader"))()
-    end
-})
-
-MainTab:AddButton({
-    Title = "TSBANIMS",
-    Callbock = function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Mautiku/TSB-anim/main/TSBANIMS'), true))()
-    end
-})
-
-MainTab:AddButton({
-    Title = "Battlegrounuds77",
-    Callbock = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Strongest/main/Battlegrounds77"))()
-    end
-})
-
-MainTab:AddButton({
-    Title = "复制卡密上面卡密",
-    Callbock = function()
-        setclipboard("BestTheStrongest5412Roblox")
-    end
-})
 
