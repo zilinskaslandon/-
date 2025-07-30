@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/ui.lua')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/ui.lua.txt')))()
 local Window = OrionLib:MakeWindow({IntroText = "BJX",Name = "BJX俄亥俄州", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
 
 local about = Window:MakeTab({
