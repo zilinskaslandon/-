@@ -30,6 +30,13 @@ MainTab:AddButton({
 })
 
 MainTab:AddButton({
+    Title = "指令脚本",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end
+})
+
+MainTab:AddButton({
     Title = "通用ESP",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP"))()
@@ -40,6 +47,20 @@ MainTab:AddButton({
     Title = "阿尔宙斯飞行",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/5zJu3hfN"))()
+    end
+})
+
+MainTab:AddButton({
+    Title = "爬墙",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    end
+})
+
+MainTab:AddButton({
+    Title = "甩飞",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/L9QBifcX"))()
     end
 })
 
@@ -209,6 +230,22 @@ MainTab:AddButton({
     end
 })
 
+local MainTab = Window:MakeTab({"俄亥俄州", "cool"})
 
+MainTab:AddButton({
+    Title = "俄亥俄州/北极星",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%E4%BF%84%E4%BA%A5%E4%BF%84%E5%B7%9E.lua"))()
+    end
+})
+
+local MainTab = Window:MakeTab({"doors", "cool"})
+
+MainTab:AddButton({
+    Title = "doors脚本",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/%F0%9F%87%A9%F0%9F%87%AAdoors%E8%84%9A%E6%9C%AC%F0%9F%87%A9%F0%9F%87%AA.Lua"))()
+    end
+})
 
 
